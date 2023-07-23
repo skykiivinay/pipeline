@@ -10,8 +10,11 @@ import { SearchComponent } from './components/pages/search/search.component';
 import { FoodPagesComponent } from './components/pages/food-pages/food-pages.component';
 import { CartPageComponent } from './components/pages/cart-page/cart-page.component';
 import { TitleComponent } from './components/pages/title/title.component';
-import { CommonModule } from '@angular/common';
-import { ReactiveFormsModule } from '@angular/forms';
+import { CommonModule, IMAGE_CONFIG } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PageNotFoundComponent } from './components/pages/page-not-found/page-not-found.component';
+import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './components/pages/login/login.component';
 
 @NgModule({
   declarations: [
@@ -22,12 +25,16 @@ import { ReactiveFormsModule } from '@angular/forms';
     FoodPagesComponent,
     CartPageComponent,
     TitleComponent,
+    PageNotFoundComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CommonModule,
     ReactiveFormsModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

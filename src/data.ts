@@ -1,4 +1,4 @@
-import { Food } from "./app/shared/models/Food";
+import { Food } from "./app/shared/models/Food"; 
 
 export const sample_foods:Food[] = [
         {
@@ -57,4 +57,6 @@ export const sample_foods:Food[] = [
           tags: ["sushi", "Japanese", "seafood"]
         }
       ];
+
+
       
